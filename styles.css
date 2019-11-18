@@ -43,7 +43,7 @@ body {
 }
 
 header {
-  height: 400px;
+  height: 300px;
   background: linear-gradient(
     to bottom,
     var(--color-primary),
@@ -51,7 +51,7 @@ header {
     #ffffff
   );
   margin: 0;
-  padding: 25px 0;
+  padding: 0px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,8 +116,9 @@ main h1 {
 }
 
 .mobile-app {
-  width: 300px;
-  height: 600px;
+  width: 50%;
+  height: 400px;
+  padding: 20px;
   /* animation: wobble 2s linear 1s infinite reverse; */
   will-change: transform;
 }
@@ -147,6 +148,7 @@ main h1 {
 .simbi-description {
   font-size: 1.3rem;
   margin-right: 20px;
+  width: ;
 }
 
 .feature-text {
@@ -249,10 +251,14 @@ img.icon {
 
   .mobile-app {
     margin: 0 auto;
+    width: 80%;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 0;
+  }
   header {
     height: 300px;
   }
