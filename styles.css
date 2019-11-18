@@ -357,6 +357,50 @@ img.icon {
 
 @media screen and (max-width: 700px) {
   .header-text {
+    width: 400px;
+    padding: 0;
+  }
+
+  .simbi-description {
+    display: block;
+    height: auto;
+    text-align: center;
+    grid-gap: 0;
+  }
+
+  .simbi-description--text {
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .simbi-description--text p {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .intro-text {
+    order: -1;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header-text {
+    width: 80%;
+    font-size: 25px;
+  }
+  .mobile-app {
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-text {
     width: 300px;
     padding: 0;
   }
