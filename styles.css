@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
 }
 
 * {
@@ -277,6 +278,7 @@ footer p {
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 30px;
+  padding: 0 20px;
 }
 
 .btn-primary {
@@ -310,9 +312,52 @@ img.icon {
   font-weight: bold;
 }
 
+@media screen and (max-width: 724px) {
+  .header-content {
+    grid-template-columns: 1fr;
+  }
+
+  .simbi-description {
+    display: block;
+    height: auto;
+    text-align: center;
+    grid-gap: 0;
+  }
+
+  .simbi-description--text {
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .simbi-description--text p {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .intro-text {
+    order: -1;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header-text {
+    width: 80%;
+    font-size: 25px;
+  }
+  .mobile-app {
+    width: 150%;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .header-text {
-    width: 400px;
+    width: 300px;
     padding: 0;
   }
 
@@ -321,34 +366,34 @@ img.icon {
     justify-content: center;
     align-items: center;
   }
-
-  .simbi-description {
-    font-size: 1rem;
-    padding: 20px;
-    word-wrap: wrap;
-  }
-
-  .mobile-app {
-    margin: 0 auto;
-    width: 80%;
-  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 470px) {
   .container {
     padding: 0;
   }
   header {
     height: 300px;
+    padding: 20px 0;
   }
 
   .btn {
     padding: 10px 20px;
+    margin: 10px;
   }
 
-  .header-text {
-    width: 280px;
-    padding: 0;
+  .intro-btns {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .simbi-mobile {
+    display: none;
+  }
+
+  footer h3 {
+    font-size: 2rem;
+    text-align: center;
   }
 
   .simbi-description {
