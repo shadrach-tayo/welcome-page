@@ -128,9 +128,14 @@ header {
   background: #ffffff;
 }
 
+.btn-primary {
+  border: 2px solid var(--color-btn-primary);
+}
+
 .btn-primary:hover {
-  color: #ffffff;
-  background: #237990;
+  color: var(--color-btn-primary);
+  /* border: 2px solid var(--color-btn-primary); */
+  background: transparent;
 }
 
 main {
