@@ -159,11 +159,15 @@ main h1 {
 }
 
 .mobile-app {
-  width: 250%;
+  width: 150%;
   height: 100%;
   /* padding: 20px; */
   animation: wobble 5s linear 1s infinite reverse;
   will-change: transform;
+}
+
+.w-200 {
+  width: 200%;
 }
 
 @keyframes wobble {
@@ -203,6 +207,7 @@ main h1 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  /* padding-left: 20px; */
 }
 
 .simbi-description--text p {
@@ -317,6 +322,15 @@ img.icon {
   font-weight: bold;
 }
 
+@media screen and (min-width: 724px) {
+  .simbi-description {
+    justify-content: center;
+    text-align: center;
+    /* padding: 0 20px; */
+    padding-left: 20px;
+  }
+}
+
 @media screen and (max-width: 724px) {
   .header-content {
     grid-template-columns: 1fr;
@@ -356,6 +370,20 @@ img.icon {
     font-size: 25px;
   }
   .mobile-app {
+    width: 70%;
+  }
+
+  .simbi-mobile {
+    /* justify-content: flex-start; */
+    width: 100%;
+  }
+
+  .w-200 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .w-200 .mobile-app {
     width: 150%;
   }
 }
@@ -400,7 +428,7 @@ img.icon {
     font-size: 25px;
   }
   .mobile-app {
-    width: 150%;
+    width: 80%;
   }
 }
 
