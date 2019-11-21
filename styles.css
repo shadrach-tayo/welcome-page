@@ -329,6 +329,24 @@ img.icon {
     /* padding: 0 20px; */
     padding-left: 20px;
   }
+
+  .mobile-app {
+    width: 135%;
+  }
+
+  .simbi-mobile {
+    /* justify-content: flex-start; */
+    width: 100%;
+  }
+
+  .w-200 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .w-200 .mobile-app {
+    width: 280%;
+  }
 }
 
 @media screen and (max-width: 724px) {
