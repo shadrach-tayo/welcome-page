@@ -1,5 +1,6 @@
 :root {
   --color-primary: rgb(47, 200, 233);
+  --color-secondary: #629f0a;
   --color-btn-primary: rgb(32, 190, 232);
 }
 html,
@@ -19,6 +20,11 @@ body {
   /* width: 600px; */
   margin: 0 auto;
   /* padding: 20px; */
+}
+
+.container-full {
+  /* max-width: 1280px; */
+  margin: 0 auto;
 }
 
 .flex {
@@ -84,7 +90,7 @@ header {
 
 .header-text {
   font-size: 1.5rem;
-  color: #ffffff;
+  /* color: #ffffff; */
   width: 100%;
   font-size: 35px;
   padding: 0 40px 0 40px;
@@ -119,6 +125,27 @@ a.btn {
   outline: 1px solid var(--color-primary);
 }
 
+.btn-primary {
+  color: #ffffff;
+  border: 2px solid var(--color-btn-primary);
+}
+
+.btn-secondary {
+  color: #ffffff;
+  border: 2px solid var(--color-secondary);
+  background: var(--color-secondary);
+}
+
+.btn-primary:hover {
+  color: var(--color--primary);
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  color: var(--color-secondary);
+  background: transparent;
+}
+
 .btn-outline {
   color: #ffffff;
 
@@ -128,29 +155,16 @@ a.btn {
   cursor: pointer;
 }
 
-.btn-outline:hover {
-  color: #ffffff;
-  border: 2px solid var(--color-btn-primary);
-  background: var(--color-btn-primary);
-}
-
-.btn-white--fill {
-  color: var(--color-primary);
-  background: #ffffff;
-}
-
-.btn-primary {
-  border: 2px solid var(--color-btn-primary);
-}
-
-.btn-primary:hover {
-  color: var(--color-btn-primary);
-  /* border: 2px solid var(--color-btn-primary); */
+.btn-outline__secondary {
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
   background: transparent;
 }
 
-.btn-fill:hover {
+.btn-outline__secondary:hover {
   color: #ffffff;
+  border: 2px solid var(--color-secondary);
+  background: var(--color-secondary);
 }
 
 main {
@@ -176,7 +190,7 @@ main h1 {
 .mobile-app {
   max-width: 450px;
   min-width: 450px;
-  height: 600px;
+  height: 550px;
   text-align: center;
   /* padding: 20px; */
   /* animation: wobble 5s linear 1s infinite reverse; */
@@ -194,7 +208,7 @@ img.front-image {
   width: 250%;
   max-width: 750px;
   /* min-width: 600px; */
-  height: 600px;
+  height: 550px;
   /* margin: 20px; */
 }
 
