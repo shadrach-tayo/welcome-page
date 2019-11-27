@@ -11,6 +11,22 @@
       href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Darker+Grotesque:700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -29,7 +45,7 @@
               simbibot
             </p>
             <div class="intro-btns">
-              <button class="btn btn-secondary btn-fill">
+              <button class="btn btn-white btn-fill">
                 Download for free
               </button>
               <a class="btn btn-secondary btn-fill" id="learn-more"
@@ -41,11 +57,13 @@
       </div>
     </header>
     <main id="more">
-      <div class="container">
+      <section class="pr-text bg-secondary">
         <h1>
           Get instant access to WAEC past questions with answers comprehensively
           explained by seasoned tutors.
         </h1>
+      </section>
+      <div class="container">
         <div class="simbi-description">
           <div class="simbi-description--text flex-v">
             <p class="text-lg bold">How Simbibot Helps</p>
@@ -115,14 +133,53 @@
         </section>
         <footer class="footer flex-center flex-v">
           <h3>Too good to be true, right?</h3>
-          <p>
+          <div class="slider">
+            <div>
+              <div class="testimonial-box">
+                <h4 class="testimonial-name">Adewale Adefemi</h4>
+                <span class="testimonial-title">Student</span>
+                <p>
+                  I was doing badly in Math, and I went on your site and did
+                  about an hour's worth of lessons each day and started to
+                  realize that I was really improving.
+                  <br />
+                  I love Simbi's explanations, they are dope.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial-box">
+                <h4 class="testimonial-name">Mrs Fatah</h4>
+                <span class="testimonial-title">Parent</span>
+                <p>
+                  I help my Son by providing access to SimbiBot.
+                  <br />I love the way the platform shows him quick,
+                  to-the-point explanations. GREAT PLATFORM!!!
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial-box">
+                <h4 class="testimonial-name">Aina Kayode</h4>
+                <span class="testimonial-title">Private Tutor</span>
+                <p>
+                  I started to use SimbiBot to enhance my teaching process with
+                  my students at senior secondary level, My students love the
+                  MAIEUTIC learning style.
+                  <br />
+                  I can now teach more students simultaneously
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="bold">
             A trial of 2 days will convince you, and you may as well get 5 days
             if you share.
           </p>
-          <button class="btn btn-primary start-trial">Start your Trial</button>
+          <button class="btn btn-secondary btn-fill">Start your Trial</button>
         </footer>
       </div>
     </main>
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
   </body>
 </html>

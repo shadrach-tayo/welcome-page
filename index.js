@@ -66,8 +66,6 @@ function scrollIt(destination, duration = 200, easing = "linear", callback) {
       : destinationOffset
   );
 
-  console.log(destinationOffset, destinationOffsetToScroll);
-
   if ("requestAnimationFrame" in window === false) {
     window.scroll(0, destinationOffsetToScroll);
     if (callback) {
@@ -106,3 +104,7 @@ const el = document.getElementById("more");
 link.addEventListener("click", () =>
   scrollIt(el, 400, "easeInQuad", () => console.log("done scrolling"))
 );
+
+$(document).ready(function() {
+  $(".slider").bxSlider();
+});
