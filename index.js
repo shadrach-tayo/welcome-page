@@ -99,4 +99,73 @@ link.addEventListener("click", () =>
 
 $(document).ready(function() {
   $(".slider").bxSlider();
+  let el = $("#dialog");
+  const documentBody = document.querySelector("body");
+  const modalContainer = document.getElementById("modal-container");
+  let activeModal = null,
+    modal1Timeout,
+    modal2Timeout;
+
+  function openModal(modalName) {
+    if (activeModal) dismissModal();
+
+    const modal = document.getElementById(modalName);
+    activeModal = modal;
+    const closeBtn = modal.querySelector(".close-btn");
+
+    console.log("modal ", closeBtn);
+    documentBody.classList.add("modal-open");
+    modal.classList.add("active");
+    modalContainer.classList.add("active");
+
+    // TODO
+    // escape key should dismiss modal
+
+    // close button should dismiss modal
+    closeBtn.addEventListener(
+      "click",
+      e => {
+        dismissModal();
+      },
+      { once: true }
+    );
+
+    // trap keyboard focus
+
+    // clear modal timeout
+    if (modalName === "modal-1") {
+      clearTimeout(modal1Timeout, openModal);
+    } else {
+      clearTimeout(modal2Timeout, openModal);
+    }
+  }
+
+  function dismissModal() {
+    if (!activeModal) return;
+    activeModal.classList.remove("active");
+    modalContainer.classList.remove("active");
+    documentBody.classList.remove("modal-open");
+    activeModal = null;
+  }
+
+  // openModal("modal-2");
+  modalContainer.addEventListener("click", e => {
+    if (e.target !== modalContainer) return;
+    return dismissModal();
+  });
+
+  modal1Timeout = setTimeout(() => {
+    openModal("modal-1");
+  }, 2000);
+
+  modal2Timeout = setTimeout(() => {
+    openModal("modal-2");
+  }, 6000);
+
+  function callOpenModal(modalName) {
+    if (modalName === "modal-1") {
+      clearTimeout(modal1Timeout, openModal);
+      openModal;
+    }
+  }
 });
