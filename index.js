@@ -161,11 +161,4 @@ $(document).ready(function() {
   modal2Timeout = setTimeout(() => {
     openModal("modal-2");
   }, 60000);
-
-  function callOpenModal(modalName) {
-    if (modalName === "modal-1") {
-      clearTimeout(modal1Timeout, openModal);
-      openModal;
-    }
-  }
 });

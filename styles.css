@@ -124,12 +124,13 @@ main h1 {
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .mobile-app {
-  max-width: 450px;
-  min-width: 450px;
-  height: 550px;
+  /* max-width: 450px; */
+  min-width: 285px;
+  height: 500px;
   text-align: center;
   /* padding: 20px; */
   animation: wobble 5s linear 1s infinite reverse;
@@ -554,12 +555,12 @@ section.bg-secondary {
   position: absolute;
   top: -10px;
   right: -10px;
-  padding: 25px;
+  padding: 20px;
   background: #ffffff;
   border-radius: 50%;
   background-image: url("./assets/close.svg");
   background-position: center;
-  background-size: 60%;
+  background-size: 40%;
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
@@ -577,6 +578,14 @@ section.bg-secondary {
 
 .modal-content__img {
   height: 80%;
+}
+
+.popup1 {
+  background-image: url("./assets/popup1.png");
+}
+
+.popup2 {
+  background-image: url("./assets/popup2.png");
 }
 
 .modal-content__text {
@@ -854,12 +863,13 @@ section.bg-secondary {
   .modal {
     max-height: 100%;
     /* overflow-y: scroll; */
-    width: 95%;
+    width: 80%;
+    height: 70%;
   }
 
   .modal-content {
     grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 40% 60%;
     padding: 0;
   }
 
@@ -913,7 +923,10 @@ section.bg-secondary {
   }
 
   .mobile-app {
-    width: 120%;
+    width: auto;
+    min-width: 290px;
+    /* margin: 0 auto; */
+    padding-right: 30px;
     margin-top: 20px;
     display: none;
   }
