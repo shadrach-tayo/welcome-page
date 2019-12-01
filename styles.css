@@ -580,6 +580,16 @@ section.bg-secondary {
   height: 80%;
 }
 
+.popup-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/kid.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position-y: bottom; */
+}
+
 .popup1 {
   background-image: url("./assets/popup1.png");
 }
@@ -799,6 +809,14 @@ section.bg-secondary {
     height: 80%;
   }
 
+  .modal-content__img {
+    height: 90%;
+  }
+
+  .popup-img {
+    height: 90%;
+  }
+
   section.pr-text {
     background: var(--color-primary);
     color: #ffffff;
@@ -869,7 +887,7 @@ section.bg-secondary {
 
   .modal-content {
     grid-template-columns: 100%;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 50% 50%;
     padding: 0;
   }
 
@@ -985,5 +1003,9 @@ section.bg-secondary {
 
   .testimonial-title {
     font-size: 0.8rem;
+  }
+
+  .modal-content {
+    grid-template-rows: 40% 60%;
   }
 }
