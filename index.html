@@ -4,9 +4,14 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Simbibot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <meta name="author" content="shadrach" />
+
     <link rel="stylesheet" href="./styles.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
       rel="stylesheet"
@@ -37,6 +42,31 @@
   <body>
     <header>
       <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img
+              src="./assets/simbibot-logo.png"
+              width="80"
+              alt="simbibot log"
+            />
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="active">Home</a></li>
+            <li class="nav-item">
+              <a href="https://learn.simbibot.com/">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://learn.simbibot.com/contact">Contact</a>
+            </li>
+          </ul>
+          <div class="menu-trigger">
+            <input type="checkbox" id="navi-toggle" class="checkbox" />
+            <label for="navi-toggle" class="nav-button">
+              <span class="nav-icon">&nbsp;</span>
+            </label>
+            <div class="background">&nbsp;</div>
+          </div>
+        </nav>
         <div class="header-content">
           <div class="simbi-mobile">
             <img
@@ -66,7 +96,7 @@
       </div>
     </header>
     <main id="more">
-      <section class="pr-text pb-20 bg-secondary">
+      <section class="pr-text pb-20 bg-sec">
         <h1>
           Get instant access to WAEC past questions with answers comprehensively
           explained by seasoned tutors.
@@ -78,7 +108,7 @@
             <p class="text-lg bold fade-left" data-transition="fade-left">
               How Simbibot Helps
             </p>
-            <p class="text-md text-light fade-left" data-transition="fade-left">
+            <p class="text-md fade-left" data-transition="fade-left">
               Simbibot helps you from your first study to your exam day. Exceed
               expectations this year in your exams, get access to the best study
               companion.
@@ -237,7 +267,7 @@
               <a
                 class="icon-btn"
                 title="whatsapp"
-                href="https://api.whatsapp.com/send?phone=2349066450210"
+                href="https://wa.me/?text=https://play.google.com/store/apps/details?id=com.simbibotoffline.apk"
                 target="_blank"
                 ><i class="whatsapp-icon"></i
               ></a>
@@ -251,11 +281,15 @@
               <a
                 class="icon-btn"
                 title="twitter"
-                href="https://twitter.com/simbibot"
+                href="https://twitter.com/intent/tweet?&text=I%20use%20simbibot%20to%20prepare%20for%20my%20UTME%20exams.%20https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.simbibotoffline.apk"
                 target="_blank"
                 ><i class="tw-icon"></i
               ></a>
-              <button class="icon-btn copylink" title="share link">
+              <button
+                class="icon-btn copylink"
+                id="link-source"
+                title="share link"
+              >
                 <i class="share-icon"></i>
               </button>
             </div>
@@ -277,7 +311,7 @@
               exams
             </p>
             <div class="icon-btns">
-             <a
+              <a
                 class="icon-btn"
                 title="facebook"
                 href="https://web.facebook.com/simbibot?_rdc=1&_rdr"
@@ -297,7 +331,13 @@
         <button class="close-btn" role="close"></button>
       </div>
     </div>
-
+    <a
+      class="icon-btn whatsapp-chat"
+      title="whatsapp"
+      href="https://api.whatsapp.com/send?phone=+2347061394773"
+      target="_blank"
+    >
+    </a>
     <script defer src="index.js"></script>
   </body>
 </html>

@@ -97,9 +97,39 @@ link.addEventListener("click", () =>
   scrollIt(el, 400, "easeInQuad", () => console.log("done scrolling"))
 );
 
+// code for clipboard copy
+const linkSource = document.getElementById("link-source");
+const linkToShare =
+  "https://play.google.com/store/apps/details?id=com.simbibotoffline.apk";
+
+linkSource.addEventListener("click", () => {
+  navigator.clipboard
+    .writeText(linkToShare)
+    .then(() => {
+      console.log("link copied");
+    })
+    .catch(e => {
+      console.log("no permission to copy");
+    });
+});
+
 $(document).ready(function() {
   $(".slider").bxSlider();
   let el = $("#dialog");
+
+  // responsive nav logic starts
+  const navbar = $(".navbar");
+
+  $(".nav-button").click(function() {
+    if (navbar.hasClass("show")) {
+      navbar.removeClass("show");
+    } else {
+      navbar.addClass("show");
+    }
+  });
+
+  // responsive nav logic ends
+
   const documentBody = document.querySelector("body");
   const modalContainer = document.getElementById("modal-container");
   let activeModal = null,
@@ -155,10 +185,10 @@ $(document).ready(function() {
   });
 
   modal1Timeout = setTimeout(() => {
-    openModal("modal-1");
-  }, 20000);
+    // openModal("modal-1");
+  }, 2000);
 
   modal2Timeout = setTimeout(() => {
-    openModal("modal-2");
+    // openModal("modal-2");
   }, 60000);
 });
