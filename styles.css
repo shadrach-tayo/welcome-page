@@ -12,11 +12,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif !important;
 }
 
 * {
   box-sizing: border-box;
+  /* font-family: "Quicksand", sans-serif !important; */
 }
 
 .container {
@@ -64,6 +65,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: start;
+  flex-wrap: 0 !important;
   padding: 20px;
   /* position: relative; */
 }
@@ -114,7 +116,9 @@ nav ul li a {
   color: #ffffff;
 }
 
-nav ul li a.active {
+nav ul li a.active,
+nav ul li a:hover,
+nav ul li a:focus {
   color: #000000;
 }
 
@@ -125,11 +129,12 @@ nav ul li a.active {
 .menu-trigger {
   position: relative;
 }
+
 .nav-button {
   position: relative;
   background-color: white;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
   top: 3vh;
@@ -142,17 +147,18 @@ nav ul li a.active {
 }
 
 .background {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   position: fixed;
   top: 5.5vh;
   right: 5.5vw;
   background: var(--color-primary);
   z-index: 890;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1),
+    opacity 0.1s cubic-bezier(0.86, 0, 0.07, 1);
   pointer-events: none;
-  visibility: hidden;
 }
 
 .item {
@@ -195,7 +201,7 @@ nav ul li a.active {
 .nav-icon,
 .nav-icon::before,
 .nav-icon::after {
-  width: 3rem;
+  width: 2rem;
   height: 2px;
   background-color: gray;
   display: inline-block;
@@ -210,10 +216,10 @@ nav ul li a.active {
 }
 
 .nav-icon::before {
-  top: -0.8rem;
+  top: -0.7rem;
 }
 .nav-icon::after {
-  top: 0.8rem;
+  top: 0.7rem;
 }
 .nav-button:hover .nav-icon:before {
   top: -1rem;
@@ -242,7 +248,7 @@ nav ul li a.active {
 
   .navbar.show .background {
     transform: scale(80);
-    visibility: visible;
+    opacity: 1;
   }
 
   nav ul {
@@ -874,8 +880,8 @@ section.bg-secondary {
 
 .whatsapp-chat {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 10px;
+  right: 10px;
   width: 50px;
   height: 50px;
   display: flex;
@@ -883,11 +889,11 @@ section.bg-secondary {
   justify-content: center;
   border: none;
   border-radius: 50%;
-  background-color: rgb(45, 213, 75);
   background: url("./assets/whatsapp-chat.svg");
   background-position: center;
   background-size: 100%;
   box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.2);
+  z-index: 999;
 }
 
 .whatsapp-chat:hover,
@@ -1169,14 +1175,17 @@ section.bg-secondary {
   .container {
     padding: 0;
   }
+  nav {
+    padding: 10px;
+  }
   header {
     height: 100vh;
     padding: 20px 0;
   }
 
   .header-text {
-    padding: 20px 10px 0 10px;
-    font-size: 40px;
+    padding: 0px 10px 0 10px;
+    font-size: 35px;
   }
   main h1 {
     width: 80%;
