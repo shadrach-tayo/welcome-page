@@ -132,12 +132,13 @@ $(document).ready(function() {
 
   const documentBody = document.querySelector("body");
   const modalContainer = document.getElementById("modal-container");
-  let activeModal = null,
-    modal1Timeout,
-    modal2Timeout;
+  let activeModal = null;
 
-  function openModal(modalName) {
-    if (activeModal) dismissModal();
+  function openModal(modalName, modalTimeout) {
+    if (activeModal) {
+      clearTimeout(modalTimeout, openModal);
+      return createModal(modalName);
+    }
 
     const modal = document.getElementById(modalName);
     activeModal = modal;
@@ -163,11 +164,7 @@ $(document).ready(function() {
     // trap keyboard focus
 
     // clear modal timeout
-    if (modalName === "modal-1") {
-      clearTimeout(modal1Timeout, openModal);
-    } else {
-      clearTimeout(modal2Timeout, openModal);
-    }
+    clearTimeout(modalTimeout, openModal);
   }
 
   function dismissModal() {
@@ -184,11 +181,12 @@ $(document).ready(function() {
     return dismissModal();
   });
 
-  modal1Timeout = setTimeout(() => {
-    openModal("modal-1");
-  }, 20000);
+  function createModal(modalName, time = 2000) {
+    const modalTimeout = setTimeout(() => {
+      openModal(modalName, modalTimeout);
+    }, time);
+  }
 
-  modal2Timeout = setTimeout(() => {
-    openModal("modal-2");
-  }, 60000);
+  createModal("modal-1", 2000);
+  createModal("modal-2", 3000);
 });

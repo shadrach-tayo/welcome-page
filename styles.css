@@ -1040,6 +1040,11 @@ section.bg-secondary {
     width: 100%;
   }
 
+  nav .logo {
+    margin-right: 5%;
+    margin-right: 5%;
+  }
+
   .header-content {
     grid-template-columns: 100%;
     width: 100%;
