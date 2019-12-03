@@ -185,10 +185,10 @@ $(document).ready(function() {
   });
 
   modal1Timeout = setTimeout(() => {
-    // openModal("modal-1");
+    openModal("modal-1");
   }, 2000);
 
   modal2Timeout = setTimeout(() => {
-    // openModal("modal-2");
+    openModal("modal-2");
   }, 60000);
 });

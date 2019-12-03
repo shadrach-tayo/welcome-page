@@ -87,19 +87,15 @@ nav.show .close-btn {
 }
 
 nav .logo {
-  margin-right: 20%;
+  margin-right: 10%;
   margin-left: 10%;
-}
-
-.nav-list__contain {
-  width: 60%;
 }
 
 nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 60%;
   justify-self: end;
   background: transparent;
 }
@@ -252,6 +248,7 @@ nav ul li a:focus {
   }
 
   nav ul {
+    width: 95%;
     position: fixed;
     top: 3vh;
     right: 3vw;
