@@ -307,6 +307,8 @@ header {
 .header-content {
   display: grid;
   grid-template-columns: 30% 70%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .intro-text {
@@ -520,7 +522,7 @@ section.pr-text p:first-of-type {
 footer h3 {
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 0;
+  margin: 20px 0 0 0;
   color: var(--color-primary);
 }
 

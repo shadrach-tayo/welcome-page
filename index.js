@@ -186,7 +186,7 @@ $(document).ready(function() {
 
   modal1Timeout = setTimeout(() => {
     openModal("modal-1");
-  }, 20000);
+  }, 2000);
 
   modal2Timeout = setTimeout(() => {
     openModal("modal-2");
