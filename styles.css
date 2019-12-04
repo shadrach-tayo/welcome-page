@@ -521,7 +521,7 @@ section.pr-text p:first-of-type {
 }
 
 footer h3 {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   text-align: center;
   margin: 20px 0 0 0;
   color: var(--color-primary);
@@ -545,6 +545,10 @@ footer p {
   height: auto !important;
 }
 
+.carousel {
+  width: 800px;
+}
+
 .testimonial-box {
   width: 650px !important;
   height: 200px;
@@ -554,7 +558,7 @@ footer p {
   border-radius: 10px;
   /* box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.2); */
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 60px;
   padding: 20px;
 }
 
@@ -1283,14 +1287,14 @@ section.bg-secondary {
 
   .testimonial-box {
     width: 300px !important;
-    height: 280px !important;
+    height: 240px !important;
     box-shadow: none;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 5px;
   }
 
   .testimonial-name {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     margin-bottom: 10px;
   }
 
