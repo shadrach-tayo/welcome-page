@@ -187,6 +187,6 @@ $(document).ready(function() {
     }, time);
   }
 
-  createModal("modal-1", 2000);
-  createModal("modal-2", 3000);
+  createModal("modal-1", 20000);
+  createModal("modal-2", 60000);
 });
