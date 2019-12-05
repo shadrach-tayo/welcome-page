@@ -121,9 +121,9 @@ $(document).ready(function() {
   // navbar scroll animation
   $(window).scroll(function() {
     if ($(document).scrollTop() > 100) {
-      $(".fixed-nav").addClass("show");
+      $(".fixed-nav").addClass("slide-down");
     } else {
-      $(".fixed-nav").removeClass("show");
+      $(".fixed-nav").removeClass("slide-down");
     }
   });
 

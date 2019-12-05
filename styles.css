@@ -87,7 +87,7 @@ ul {
   transition: all 0.4s;
 }
 
-.fixed-nav.show {
+.fixed-nav.slide-down {
   top: 0;
 }
 
