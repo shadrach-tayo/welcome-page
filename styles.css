@@ -860,6 +860,12 @@ section.bg-secondary {
   background-size: 100%;
   background-position: center;
   cursor: pointer;
+  outline: o;
+}
+
+.icon-btn:hover,
+.icon-btn:focus {
+  outline: 0;
 }
 
 .icon-btn > i {
