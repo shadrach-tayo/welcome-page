@@ -58,7 +58,7 @@ body {
 
 header .container {
   max-width: 1440px;
-  padding: 0;
+  padding: 68px 0 0 0;
 }
 
 nav {
@@ -66,9 +66,40 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  flex-wrap: 0 !important;
-  padding: 20px;
-  /* position: relative; */
+
+  /* padding: 10px; */
+}
+
+ul {
+  margin: 0 auto;
+}
+
+.navbar.fixed-nav {
+  position: fixed;
+  top: -67.53px;
+  z-index: 111;
+  background-image: linear-gradient(
+    to right,
+    rgb(61, 161, 193),
+    rgb(67, 204, 200),
+    rgb(61, 161, 193)
+  );
+  transition: all 0.4s;
+}
+
+.fixed-nav.show {
+  top: 0;
+}
+
+.navbar {
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-wrap: 0;
+  width: 100vw;
+  padding: 10px;
 }
 
 nav .close-btn {

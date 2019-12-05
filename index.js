@@ -118,6 +118,15 @@ linkSource.addEventListener("click", () => {
 });
 
 $(document).ready(function() {
+  // navbar scroll animation
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 100) {
+      $(".fixed-nav").addClass("show");
+    } else {
+      $(".fixed-nav").removeClass("show");
+    }
+  });
+
   $(".slider").bxSlider();
   let el = $("#dialog");
 
