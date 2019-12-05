@@ -88,7 +88,7 @@ nav.show .close-btn {
 }
 
 nav .logo {
-  margin-right: 10%;
+  margin-right: 5%;
   margin-left: 10%;
 }
 
@@ -346,7 +346,7 @@ main h1 {
   font-size: 2rem;
   text-align: center;
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
   margin-bottom: 20px;
 }
 
@@ -892,7 +892,6 @@ section.bg-secondary {
   background-repeat: no-repeat;
   font-size: 14px;
   position: relative;
-  fill: black;
 }
 
 .share-icon span {
@@ -1074,7 +1073,7 @@ section.bg-secondary {
 
   nav .logo {
     margin-right: 5%;
-    margin-right: 5%;
+    margin-left: 5%;
   }
 
   .header-content {

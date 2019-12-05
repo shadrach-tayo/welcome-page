@@ -99,8 +99,7 @@ link.addEventListener("click", () =>
 
 // code for clipboard copy
 const linkSource = document.getElementById("link-source");
-const linkToShare =
-  "https://play.google.com/store/apps/details?id=com.simbibotoffline.apk";
+const linkToShare = "https://simbibot.com/welcome-page/";
 
 linkSource.addEventListener("click", () => {
   const copiedMessage = document.getElementById("copy-message");
