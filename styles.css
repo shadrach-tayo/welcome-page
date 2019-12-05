@@ -892,6 +892,7 @@ section.bg-secondary {
   background-repeat: no-repeat;
   font-size: 14px;
   position: relative;
+  fill: black;
 }
 
 .share-icon span {
