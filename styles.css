@@ -880,9 +880,29 @@ section.bg-secondary {
 }
 
 .share-icon {
-  background: url("./assets/share.svg");
+  background: url("./assets/link.svg");
   background-position: center;
-  background-size: contain;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  position: relative;
+}
+
+.share-icon span {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  color: white;
+  width: 100px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.share-icon span.copied {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .instagram-icon {

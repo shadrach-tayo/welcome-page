@@ -103,10 +103,15 @@ const linkToShare =
   "https://play.google.com/store/apps/details?id=com.simbibotoffline.apk";
 
 linkSource.addEventListener("click", () => {
+  const copiedMessage = document.getElementById("copy-message");
   navigator.clipboard
     .writeText(linkToShare)
     .then(() => {
       console.log("link copied");
+      copiedMessage.classList.add("copied");
+      setTimeout(() => {
+        copiedMessage.classList.remove("copied");
+      }, 2000);
     })
     .catch(e => {
       console.log("no permission to copy");
